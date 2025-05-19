@@ -41,9 +41,9 @@ struct client_ref {
             recv_len = recv(sock, buf, MAX_BUF_SIZE - 1, 0);
             if (recv_len > 0) {
                 buf[recv_len] = '\0';
-                print_format("recv", buf);
+                print_format("recv_worker", buf);
             } else {
-                print_format("recv", "client disconnected.");
+                print_format("recv_worker", "client disconnected.");
                 closesocket(sock);
                 break;
             }
