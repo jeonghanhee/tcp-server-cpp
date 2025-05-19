@@ -132,7 +132,7 @@ int main(int argc, char **argv) {
     }
     //_mutex.unlock();
 
-    print_format("main", "success close server.");
+    print_format("main", "success server close");
 
     WSACleanup();
     return 0;
